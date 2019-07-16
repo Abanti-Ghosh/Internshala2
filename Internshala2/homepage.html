@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Foodcubo</title>
+       <link href="logo1.png" rel="shortcut icon"/>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		 
+		 <link rel="stylesheet" type="text/css" href="css1/style1.css">
+		 
+		 <script lang="javascript">
+		var A=new Array('food6.jpg','food14.jpg','foo11.jpg','food16.jpg','food17.jpg');
+		var x=0;
+		function forward()
+		{
+			if(x<A.length-1)
+			{
+			x++;
+			}
+			else
+			{
+			x=0;
+			}
+			document.getElementById("pic").src=A[x];
+		}
+		function back()
+		{
+			if(x>0)
+			{
+			x--;
+			}
+			else
+			{
+			x=A.length-1;
+			}
+			document.getElementById("pic").src=A[x];
+		}
+		</script>
+
+
+		  </head>
+		  <body>
+		  
+		  <div class="container-fluid">
+		     
+		      <nav class="navbar navbar-expand-sm row sticky-top">
+	   <a href="#" class="navbar-brand"><img src="logo1.png" width="100px">Foodcubo</a>
+	   
+	   <button data-toggle="collapse" data-target="#tanz" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+	   
+	   <div id="tanz" class="collapse navbar-collapse">
+	   
+	   <ul class="navbar-nav ml-auto">
+	      <li class="nav-item navilinks linkact">
+		      <a href="#" class="nav-link">Home</a>
+			  </li>
+			  
+			  <li class="nav-item navilinks">
+		      <a href="#" class="nav-link">Login</a>
+			  </li>
+			  
+			   <li class="nav-item navilinks">
+		      <a href="#" class="nav-link">Sign up</a>
+			  </li>
+			  
+			  
+			   <li class="nav-item navilinks dropdown">
+		      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdownTanz">Menu</a>
+			  <div class="dropdown-menu dropstyle" aria-lablledby="dropdownTanz">
+			  <a href="#" class="dropdown-item">Food</a>
+			      
+			  
+				
+			  <a href="#" class="dropdown-item">Beverages</a>
+			          
+			  
+			  </div>
+			  </li>
+			  
+			  <li class="nav-item navilinks">
+		      <a href="#" class="nav-link">Contact</a>
+			  </li>
+			  </ul>
+			  </div>
+		 </nav>
+		   
+		 
+		 
+		 
+		 
+		
+					  <div id="mainHeader" class="row">
+			     <div class="col-12">
+			  <h1>Food That Makes your Stomach And Pocket Smile</h1>
+			  <a href="#aboutSection">
+			  <button>About Us</button>
+           </a></div>
+
+		</div>
+		
+		
+		
+		
+
+		
+   
+     <div id="imageSection" class="row">
+	 
+	   <div class="sidebar">
+	      
+		  <h1>Great Deals</h1>
+		  <ul>
+
+		     <li><a href="#">Order Now</a></li>
+			 <li><a href="#">Get Coupon</a></li>
+			 <li><a href="#">Services</a></li>
+			 <li><a href="#">Offers</a></li>
+			 <li><a href="#">FAQs</a></li>
+			 </ul>
+			
+			 <br><br>
+			</div>
+
+			 
+			 
+		<div id="image">
+		<img src="food1.jpg" id="pic"/>
+		</div>
+		<div id="menu">
+				<img src="back.png" onclick="back();"/>
+				<img src="fwd.png" align="right" onclick="forward();"/>
+				
+				
+	
+	      
+			  
+	   </div>
+</div>
+	
+
+	
+	<script lang="javascript">
+	
+	   
+		function slide_img()
+		{
+		document.getElementById("pic").src=A[x];
+			if(x<A.length-1)
+			{
+			x++;
+			}
+			else
+			{
+			x=0;
+			}
+			setTimeout("slide_img()",2000);
+		}
+		slide_img();
+		</script>
+
+<div id="aboutSection" class="row">
+     <div class="col-12 sectionHeading">
+	    <h1>Our Story</h1>
+		<hr class="hrSection">
+		</div>
+		
+		<div class="col-md-10"><p class="text-justify">Foodcubo is India's one of the most promising food delivery portal. This company was started by Rohit Kashyap originating from the city of Patna and have a rage to spread its services all over India. Food Cubo focuses on bringing down the cost and the ease of online food ordering to the fingertips of its customers and would be soon revolutionizing the food industry.</p></div>
+		<div class="col-md-2 d-none d-md-block"><img style="margin:auto;dispaly:block" height="200px" width="150px" src="aboutpic.jpg"></div>
+   </div>
+   <div id="cd">
+  <div class="card" style="width: 18rem;">
+  <img src="office.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Our Office</p>
+  </div>
+</div>
+
+ <div class="card" style="width: 18rem;">
+  <img src="location.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Our Location</p>
+  </div>
+</div>
+</div>
+
+   
+    <footer class="row">
+     <div id="foot" class="col-md-6">
+	   <div id="foots" style="width:250px; margin:auto; color:white;">
+	 <h1>Need Help?</h1>
+	 <h4>Follow Us At</h4>
+	 <ul><marquee direction="up" scrollamount="3" height="112px" onmouseover="this.stop();" onmouseout="this.start();">
+	    <li><a href="https://www.facebook.com/"><img src="fb1.png" width="30px" height="30px" ></a></li><br>
+		 <li><a href="https://www.instagram.com/"><img src="insta1.jpg" width="30px" height="30px" ></a></li><br>
+		  <li><a href="https://www.twitter.com/"><img src="twit.png" width="30px" height="30px" ></a></li>
+		</ul> </marquee></div>
+		</div>
+		<div class="col-md-6">
+		     <div style="width:350px; margin:auto;">
+			 
+		   <input type="text" placeholder="Email"><br><br>
+		  <textarea rows="5" cols="40" name="message" placeholder="Queries?"></textarea>
+		   <input type="submit" class="btn btn-info">
+		   </div>
+		</div>
+		<div class="col-12" style="text-align:center;color:white;background-color">&copy; FoodCubo</div>
+		</footer>
+
+</div>
+
+
+		      
+		  
+		  
+		  
+
+		  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/scroll.js"></script>
+
+
+
+
+	</body>
+</html>

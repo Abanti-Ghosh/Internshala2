@@ -1,0 +1,142 @@
+
+	.container-fluid{
+		   
+		   
+		   height:600px;
+		    background-image: url("food8.jpg");
+	 background-size:100% 100%;
+	
+	 background-repeat:no-repeat;
+	 background-position:cover;
+		   
+		   
+	}
+
+.navilinks:hover{
+     background-color:#007FFF;
+     border-radius:10px;
+	
+}
+.navilinks a{
+    color:white !important;
+}
+.dropstyle{
+	background-color:#343A40;
+}
+.dropstyle a:hover{
+	background-color:black;
+}
+.dropdown:hover>.dropdown-menu{
+	display:block;
+}
+.linkact{
+	 background-color:cyan;
+     border-radius:10px;
+	
+}
+.navbar-brand{
+        color:white;
+        font-size:30px;	
+}
+
+#mainHeader h1{
+         color:white;
+		 text-align:center;
+		 width:100%;
+		 margin-top:140px;
+}
+
+#mainHeader button{
+         width:120px;
+		 height:40px;
+		 margin:auto;
+		 display:block;
+		 background-color:rgba(0,0,0,0);
+		 border:2px solid black;
+		 color:white;
+		 border-radius:15px;
+		 font-size:18px;
+		 margin-top:50px;
+		 
+		 
+    }	
+	#mainHeader button:hover{
+         
+		 background-color:black;
+		 border-style:none;
+		 
+		 }	
+		 
+		 
+		 
+		 #aboutSection{
+        
+         height:350px;
+         background-color:#ebebeb;
+		 margin-top:25px;
+		 padding-left:50px;
+		 
+	}	
+.sectionHeading{
+      width:100%;
+      text-align:center;
+      margin-top:40px;
+	  margin-bottom:0px !important;
+}	  
+.hrSection{
+      width:50px;
+	  border:1px solid;
+	  padding:0px;
+	  margin-bottom:0px;
+}
+
+
+		#imageSection{height:300px;width:100%;margin-top:250px;}
+
+	
+#image{
+	height:300px;width:850px;margin-left:150px;padding-left:100px; 
+	
+	}
+#image>img{
+	height:100%;width:100%;border-radius:50px;border:1px solid black;  
+	
+	}
+#menu{
+	height:300px;width:100%;margin-top:110px;  
+	
+	}
+#menu>img{
+	height:50px;width:50px;opacity:0.4;margin-left:520px;margin-right:80px; 
+	
+	}
+#menu>img:hover{
+	opacity:1;cursor:pointer;
+	}
+#menu{
+	position:absolute;
+	}
+	
+	.sidebar{
+	  
+	padding-top:20px;
+	padding-left:60px;
+}
+
+
+
+footer{
+  
+  background-color:#343A40;
+  padding-top:55px;
+ 
+}  
+
+.card{
+	float:left;
+	margin-left:20px;
+}
+#cd{
+	margin-top:50px;
+}
+
